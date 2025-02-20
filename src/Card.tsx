@@ -1,5 +1,10 @@
-
-const Card  = ({title, image ,description}) => {
+interface CardProps {
+    title: string;
+    image: string;
+    description: string;
+  }
+  
+  const Card: React.FC<CardProps> = ({ title, image, description }) => {
 
   return (
     <div className="bg-white flex flex-col items-center- w-70 gap-2.5 rounded-2xl shadow-2xl p-5 ">
